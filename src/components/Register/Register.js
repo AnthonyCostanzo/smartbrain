@@ -19,7 +19,7 @@ const Register = ({loadUser,onRouteChange}) => {
   }
 
   const onSubmitSignIn = async() => {
-    const response = await fetch('https://infinite-forest-59915.herokuapp.com//register', {
+    const response = await fetch('https://infinite-forest-59915.herokuapp.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

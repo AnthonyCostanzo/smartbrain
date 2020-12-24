@@ -62,7 +62,7 @@ const App = () =>  {
 
   const onImageSubmit = () => {
     setImageUrl(input);
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://infinite-forest-59915.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
