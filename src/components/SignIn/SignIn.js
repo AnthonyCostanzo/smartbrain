@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import './SignIn.css';
 
 const SignIn = ({loadUser,onRouteChange}) => {
   const [signInEmail,setSignInEmail] = useState('');
@@ -37,7 +38,7 @@ const SignIn = ({loadUser,onRouteChange}) => {
           <div className="mt3">
             <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
             <input
-              className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+              className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 hover-black"
               type="email"
               name="email-address"
               id="email-address"
@@ -47,7 +48,7 @@ const SignIn = ({loadUser,onRouteChange}) => {
           <div className="mv3">
             <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
             <input
-              className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+              className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 hover-black"
               type="password"
               name="password"
               id="password"
@@ -58,7 +59,7 @@ const SignIn = ({loadUser,onRouteChange}) => {
           <div className="">
             <input
               onClick={onSubmitSignIn}
-              className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+              className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib hover-black"
               type="submit"
               value="Sign in"
             />
